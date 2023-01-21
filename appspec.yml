@@ -6,7 +6,5 @@ files:
 hooks:
   ApplicationStop:
     - location: deregister_from_elb.sh
-    - location: stop_httpd.sh
   ApplicationStart:
-    - location: start_httpd.sh
     - location: register_with_elb.sh
